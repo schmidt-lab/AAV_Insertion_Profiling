@@ -113,25 +113,25 @@ wt_s1_rep2_SE = qt(0.975, df = length(wt_s1_rep2) - 1 * sd(wt_s1_rep2) /
                      sqrt(length(wt_s1_rep2)))
 
 ### Load replicate 1 data ####
-d1_FLAG = read.csv('./input/counts_FLAG_032822_cat.tsv',
+d1_FLAG = read.csv('./input/counts_FLAG_rep1.tsv',
                    sep = '\t',
                    header = T)
-d1_gfp = read.csv('./input/counts_GFPnb_031622_cat.tsv',
+d1_gfp = read.csv('./input/counts_GFPnb_rep1.tsv',
                   sep = '\t',
                   header = T)
-d1_mmobA = read.csv('./input/counts_mMobA_032822_cat.tsv',
+d1_mmobA = read.csv('./input/counts_mMobA_rep1.tsv',
                     sep = '\t',
                     header = T)
-d1_DCV = read.csv('./input/counts_DCV_032822_cat.tsv',
+d1_DCV = read.csv('./input/counts_DCV_rep1.tsv',
                   sep = '\t',
                   header = T)
-d1_WDV = read.csv('./input/counts_WDV_032822_cat.tsv',
+d1_WDV = read.csv('./input/counts_WDV_rep1.tsv',
                   sep = '\t',
                   header = T)
-d1_SNAP = read.csv('./input/counts_SNAP_032822_cat.tsv',
+d1_SNAP = read.csv('./input/counts_SNAP_rep1.tsv',
                    sep = '\t',
                    header = T)
-d1_SpyCatcher = read.csv('./input/counts_SpyCatcher_032822_cat.tsv',
+d1_SpyCatcher = read.csv('./input/counts_SpyCatcher_rep1.tsv',
                          sep = '\t',
                          header = T)
 d1 = rbind(d1_FLAG,
@@ -149,25 +149,25 @@ d1$cond = as.factor(d1$cond)
 d1$rep = as.factor(rep('rep1', nrow(d1)))
 
 ### Load replicate 2 data ####
-d2_FLAG = read.csv('./input/counts_FLAG_062722_cat.tsv',
+d2_FLAG = read.csv('./input/counts_FLAG_rep2.tsv',
                    sep = '\t',
                    header = T)
-d2_gfp = read.csv('./input/counts_GFPnb_062722_cat.tsv',
+d2_gfp = read.csv('./input/counts_GFPnb_rep2.tsv',
                   sep = '\t',
                   header = T)
-d2_mmobA = read.csv('./input/counts_mMobA_062722_cat.tsv',
+d2_mmobA = read.csv('./input/counts_mMobA_rep2.tsv',
                     sep = '\t',
                     header = T)
-d2_DCV = read.csv('./input/counts_DCV_062722_cat.tsv',
+d2_DCV = read.csv('./input/counts_DCV_rep2.tsv',
                   sep = '\t',
                   header = T)
-d2_WDV = read.csv('./input/counts_WDV_062722_cat.tsv',
+d2_WDV = read.csv('./input/counts_WDV_rep2.tsv',
                   sep = '\t',
                   header = T)
-d2_SNAP = read.csv('./input/counts_SNAP_062722_cat.tsv',
+d2_SNAP = read.csv('./input/counts_SNAP_rep2.tsv',
                    sep = '\t',
                    header = T)
-d2_SpyCatcher = read.csv('./input/counts_SpyCatcher_062722_cat.tsv',
+d2_SpyCatcher = read.csv('./input/counts_SpyCatcher_rep2.tsv',
                          sep = '\t',
                          header = T)
 d2 = rbind(d2_FLAG,
